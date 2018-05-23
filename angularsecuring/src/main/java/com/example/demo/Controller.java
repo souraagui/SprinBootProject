@@ -1,17 +1,19 @@
 package com.example.demo;
 
-import static org.assertj.core.api.Assertions.entry;
-
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @CrossOrigin("*")
@@ -29,7 +31,7 @@ public class Controller {
 	@ResponseBody
 	  public Collection<Map<String,String>> home() { 
 		Collection<Map<String,String>> result = new ArrayList<Map<String,String>>(); 
-	    
+	    //TODO ABO : formatage du code
 		model1.put("firstName", "issa");
 	    model1.put("content", "Hello");
 	    model1.put("email", "issa@sodi.fr");
