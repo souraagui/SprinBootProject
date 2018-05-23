@@ -29,23 +29,27 @@ public class Controller {
 	@ResponseBody
 	  public Collection<Map<String,String>> home() { 
 		Collection<Map<String,String>> result = new ArrayList<Map<String,String>>(); 
-	    model1.put("firstName", "issa");
+	    
+		model1.put("firstName", "issa");
 	    model1.put("content", "Hello");
 	    model1.put("email", "issa@sodi.fr");
 	    model1.put("lastName", "sousou");
+
 	    model2.put("firstName", "abdou");
 	    model2.put("content", "world");
 	    model2.put("email", "abdou@sodi.fr");
 	    model2.put("lastName", "fall");
+
 	    model3.put("firstName", "michel");
 	    model3.put("content", "edoua");
 	    model3.put("email", "michel@sodi.fr");
 	    model3.put("lastName", "bousse");
+
 	    model4.put("firstName", "charles");
 	    model4.put("content", "london");
 	    model4.put("email", "chadou@sodi.fr");
 	    model4.put("lastName", "amichia");
-	    
+
 	    result.add(model1);
 	    result.add(model2);
 	    result.add(model3);
