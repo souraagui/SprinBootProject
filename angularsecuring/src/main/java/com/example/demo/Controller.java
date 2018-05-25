@@ -26,11 +26,12 @@ public class Controller {
 	private static Map<String,String> model3 = new HashMap<String,String>();
 	private static Map<String,String> model4 = new HashMap<String,String>();
 	Collection<Map<String,String>> maListe = new ArrayList<Map<String,String>>();
-	
+
 	@GetMapping()
 	@ResponseBody
 	  public Collection<Map<String,String>> home() { 
-		Collection<Map<String,String>> result = new ArrayList<Map<String,String>>(); 
+		Collection<Map<String,String>> result = new ArrayList<Map<String,String>>();
+
 	    //TODO ABO : formatage du code
 		model1.put("firstName", "issa");
 	    model1.put("content", "Hello");
